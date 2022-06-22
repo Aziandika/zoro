@@ -274,7 +274,7 @@ module.exports = async(conn, msg, m, setting, store) => {
 		//{ callButton: { displayText: `Call Owner!`, phoneNumber: `+${ownerNumber}` } },
 		const buttonsDefault = [
 			{ urlButton: { displayText: `GRUP JOJO-BOT`, url : `https://chat.whatsapp.com/HECLovHbCI6LVVH4Q8FN2C` } },
-			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6281319944917?text=Hai+kak+aku+mau+beli+PREMIUM` } },
+			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/628180339743?text=Hai+kak+aku+mau+beli+PREMIUM` } },
 			{ quickReplyButton: { displayText: `💰 Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Script`, id: `${prefix}sc` } },
 		]
@@ -379,7 +379,7 @@ module.exports = async(conn, msg, m, setting, store) => {
 			var kus = [
 			{ quickReplyButton: { displayText: `Main Lagi`, id: `${prefix}kuis` } },
 		]
-			 conn.sendMessage(from, { text: texttg, templateButtons: kus, footer: 'KUIS By JOJO-BOT', mentions: [sender]} )  
+			 conn.sendMessage(from, { text: texttg, templateButtons: kus, footer: 'KUIS By Zoro-BOT', mentions: [sender]} )  
 		    tebaktebakan.splice(getGamePosi(from, tebaktebakan), 1)
 		  }
 		}
@@ -441,7 +441,7 @@ if (chats.startsWith(`Bot`)){
 			    var teks = allmenu(sender, prefix, pushname, isOwner, isPremium, balance, limit, limitCount, glimit, gcount)
 			    
 				/*conn.sendMessage(from, { react: { text: `👋`, key: msg.key }})*/
-conn.sendMessage(from, { caption: teks, image: fs.readFileSync('media/Jojo2.jpg'), templateButtons: buttonsDefault, footer: '© Jojo - Bot', mentions: [sender]} )
+conn.sendMessage(from, { caption: teks, image: fs.readFileSync('media/Jojo2.jpg'), templateButtons: buttonsDefault, footer: '© Zoro - Bot', mentions: [sender]} )
 				break
 case prefix+'delete':
   case prefix+'d':
@@ -495,7 +495,7 @@ _Yakin kamu mau daftar ke premium?_
 			    reply(runtime(process.uptime()))
 			    break
 case prefix+'groupjojo':
-  reply("Group 1\n\nhttps://chat.whatsapp.com/HECLovHbCI6LVVH4Q8FN2C\nGroup 2\n\nhttps://chat.whatsapp.com/DqM488U5RvmGpsbTMfDbMv\nCobain Bot Telegram Jojo yuk!\nhttps://t.me/docsjojo_bot?start=help")
+  reply("Group 1\n\nhttps://chat.whatsapp.com/DDBj3tkdofXEjSlH6wPHn6\nGroup 2\n\nhttps://chat.whatsapp.com/DDBj3tkdofXEjSlH6wPHn6\nCobain Bot Telegram Jojo yuk!\nhttps://t.me/docsjojo_bot?start=help")
   break
 			case prefix+'speed':
 			  reply("Testing Speed...")
@@ -508,8 +508,8 @@ case prefix+'infobot':
     case prefix+'info':
       var caption = `*[ INFO ROBOT JOJO ]*
 
-*Nama Bot :* Jojo
-*Name Owner :* Arasya
+*Nama Bot :* Zoro
+*Name Owner :* Azi
 *Nomor Bot :* wa.me/${nobot}
 *Nomor Owner :* wa.me/${ownerNumber}
 *Engine :* NodeJs
@@ -546,14 +546,14 @@ break
 			    break*/
 			case prefix+'owner':
 			    for (let x of ownerNumber) {
-			      sendContact(from, x.split('@s.whatsapp.net')[0], 'Arasya Rafi', msg)
+			      sendContact(from, x.split('@s.whatsapp.net')[0], 'Azi • tzy ©', msg)
 			    }
 			    /*conn.sendMessage(from, { audio: {url : `https://b.top4top.io/m_2223iin241.mp3`}, mimetype: 'audio/mp4', ptt: true}, {quoted: msg})*/
 			    var owncuy = [
 			{ quickReplyButton: { displayText: `♨️ Instagram`, id: `${prefix}igowner` } },
 			{ quickReplyButton: { displayText: `🌐 Github`, id: `${prefix}githubown` } },
 		]
-		conn.sendMessage(from, {text: `Ingin bertanya tanya tentang apa?`, templateButtons: owncuy, footer: `My Name : Arasya Rafi Putra`, mentions: [sender]} )
+		conn.sendMessage(from, {text: `Ingin bertanya tanya tentang apa?`, templateButtons: owncuy, footer: `My Name : Azi • king of devil `, mentions: [sender]} )
 			    break
 case prefix+'igowner':
  reply(`INSTAGRAM OWNER : @${ig}\nLINK : https://instagram.com/${ig}`)
